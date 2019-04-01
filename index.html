@@ -1,0 +1,63 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+        <style>
+            .title{
+                text-align: center;	
+            }
+            .grid{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 2em; <!-- medida proporcional a tela -->
+                align-items: center;
+                justify-items: center;	
+            }
+
+            .txt{
+                display: grid;
+                grid-template-columns: 1fr ;
+                width: 50%;
+                column-width: 1fr;
+                border-right-width: 50fr;
+                height: 50%;
+                border:1px solid black;
+            }
+
+            .boxed{
+                width: 50%;
+                height: 50%;
+                display: flex;
+                justify-content: space-between;
+                align-content: 50px;
+                float: center;
+                clear: both;
+                }
+            .tela:after {
+                content: "";
+                display: block;
+                padding-bottom: 100%;
+                }
+        
+        </style>        
+    </head>
+    <body>
+        <h1 class="title">Projeto de Produto</h1>
+        <section class="grid txt">
+            Esse lugar aparecerá o texto
+        </section>
+        <form class="grid">
+            <section></section>
+            <section  id="sec_btn_a">
+                <button id="btn_a"></button>
+            </section>
+            <section></section>
+            <section  id="sec_btn_b">
+                <button id="btn_b"></button>
+            </section>
+            <section></section>
+            <section  id="sec_btn_principal">
+                <button id="btn_principal"></button>
+            </section>
+        </form>
+    </body>
+</html>
